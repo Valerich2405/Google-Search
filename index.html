@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Google Search</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+          <header>
+            <nav class="main_links">
+              <a href="/images.html" class="link">Пошук зображень</a>
+              <a href="/advanced.html" class="link">Розширений пошук</a>
+          </nav>
+          </header>
+          <div class="main_search">
+            <img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
+              <form id="main-form" action="https://www.google.com/search" method="get">
+                  <input class="main_field" type="text" name="q" placeholder="Введіть пошуковий запит або URL-адресу">
+                  <div class="main_button">
+                      <button type="submit" class="btn">Пошук Google</button>
+                      <button type="button" onclick="lucky()" class="btn">Мені пощастить!</button>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+  <script>
+      function lucky() {
+        window.location.href = "https://www.google.com/search?q=" + document.querySelector('input[name="q"]').value + "&btnI=I%27m+Feeling+Lucky";
+      }
+  </script>
+  </body>
+</html>

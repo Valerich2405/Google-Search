@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Google Search</title>
+</head>
+<body>
+    <div class="main advanced">
+        <div class="container">
+            <header>
+                <nav class="main_links">
+                    <a href="index.html" class="link">Пошук Google</a>
+                    <a href="/images.html" class="link">Пошук зображень</a>
+                </nav>
+            </header>
+            <div class="advanced_search">
+                <h1 class="advanced_caption">Розширений пошук</h1>
+                <p class="advanced_title">Знайти сторінки, що містять...</p>
+                <div class="advanced_block">
+                    <ul class="advanced_items">
+                        <li class="advanced_item">усі ці слова:</li>
+                        <li class="advanced_item">точне слово або фразу:</li>
+                        <li class="advanced_item">будь-яке з цих слів:</li>
+                        <li class="advanced_item">жодне з цих слів:</li>
+                    </ul>
+                    <form id="advanced-form" action="https://www.google.com/search" method="GET">
+                        <input type="text" id="all-words" name="as_q" class="advanced_field">
+                        <input type="text" id="exact-phrase" name="as_epq" class="advanced_field">
+                        <input type="text" id="any-words" name="as_oq" class="advanced_field">
+                        <input type="text" id="none-words" name="as_eq" class="advanced_field">
+                        <input type="submit" value="Розширений пошук" class="advanced_btn btn">
+                      </form>    
+                </div>                              
+            </div>
+        </div>
+    </div>
+</body>
+</html>
